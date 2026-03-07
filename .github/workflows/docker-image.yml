@@ -7,10 +7,14 @@ jobs:
     strategy:
       matrix:
         include:
+          - version: "5.42"
+            branches: "1.12,1.13,master"
+          - version: "5.40"
+            branches: "1.12,1.13,master"
           - version: "5.38"
-            branches: "1.11,1.12,master"
+            branches: "1.12,1.13,master"
           - version: "5.36"
-            branches: "1.11,1.12"
+            branches: "1.12"
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
