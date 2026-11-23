@@ -1,4 +1,4 @@
-ARG version=18
+ARG version=19
 
 FROM        postgres:$version
 MAINTAINER  LedgerSMB  devel@lists.ledgersmb.org
